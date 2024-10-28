@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Cart Management | Create New Items</title>
+    <link href="/main.css" rel="stylesheet" />
+
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../../product/">Product</a>
+        <a href="../../review/">Review</a>
+        <a href="../../favourite/">Favourite</a>
+        <a href="../">Cart</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </header>
+    <section>
+        <div id="review-product-main">
+            <h1>Add Cart Items for <span id="cart-product-id"></span></h1>
+            <form>
+                <fieldset>
+                    <p>
+                        <label for="productId">Product Id</label>
+                        <input type="number" id="productId" name="productId" />
+                    </p>
+                    <p>
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" />
+                    </p>                        
+                </fieldset>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </section>
+    <script src="../../auth.js" type="text/javascript"></script>
+</body>
+
+</html>

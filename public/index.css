@@ -1,0 +1,34 @@
+.deadline {
+    font-weight: bold;
+    color: red;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.fulfill-with-ca1 {
+    font-weight: bold;
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.review-row {
+    border-bottom: 1px solid black;
+}
+
+form.search {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.fieldset-group {
+    border: 1px solid darkcyan;
+}

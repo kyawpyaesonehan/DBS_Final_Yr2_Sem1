@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Product Management | Retrieve Product</title>
+        <link href="/main.css" rel="stylesheet" />
+
+        <link href="./index.css" rel="stylesheet" />
+        <script src="./index.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <a href="../../product/">Product</a>
+            <a href="../../review/">Review</a>
+            <a href="../../favourite/">Favourite</a>
+            <a href="../../cart/">Cart</a>
+            <a href="#" onclick="logout()">Logout</a>                        
+        </header>
+        <section>
+            <div>
+                <h1>Retrieve All Products</h1>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Unit Price</th>
+                            <th>Country</th>
+                            <th>Product Type</th>
+                            <th>Image</th>
+                            <th>Manufactured On</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-tbody"></tbody>
+                </table>
+            </div>            
+        </section>
+        <section>
+            <div>
+                <h1>Reviews For This Product</h1>
+            </div>
+            <div id="product-container"></div>
+            <form id="reviews-form"></form>
+            <div id="reviews-container"></div>
+        </section>
+        <script src="../../auth.js" type="text/javascript"></script>
+    </body>
+</html>

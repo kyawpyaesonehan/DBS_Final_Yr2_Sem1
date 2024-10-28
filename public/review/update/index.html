@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Review Management | Update Review</title>
+    <link href="/main.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../../product/">Product</a>
+        <a href="../">Review</a>
+        <a href="../../favourite/">Favourite</a>
+        <a href="../../cart/">Cart</a>        
+        <a href="#" onclick="logout()">Logout</a> 
+    </header>
+    <section>
+        <div>
+            <h1>Update Review</h1>
+            <form>
+                <fieldset>
+                    <p>
+                        <label>Review Id</label>
+                        <input type="text" name="reviewId" readonly/>
+                    </p>                    
+                    <p>
+                        <label>Rating</label>
+                        <select name="rating">
+                            <option value="">Select rating</option>
+                            <option value="1">⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Review Text</label>
+                        <textarea name="reviewText" ></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

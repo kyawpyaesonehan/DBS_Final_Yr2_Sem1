@@ -1,0 +1,13 @@
+section {
+    height: unset;
+    margin-bottom: 20;
+}
+
+.cart-summary-main {
+    border: 1px solid black;
+    padding: 20;
+}
+
+.value {
+    font-weight: bold;
+}

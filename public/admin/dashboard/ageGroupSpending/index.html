@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard Management</title>
+    <link href="/main.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../">Dashboard</a>
+        <a href="../../saleOrder/">Sale Order</a>
+        <a href="../../supplier/">Supplier</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </header>
+    <section>
+        <h1>Age Group Spending</h1>
+        <div>
+            <form class="search">
+                <p>
+                    <label for="gender">Gender</label>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="M" />
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="female" value="F" />
+                        <label for="female">Female</label>
+                    </div>
+                </p>
+                <p>
+                    <label for="minTotalSpending">Min Total Spending</label>
+                    <input type="number" name="minTotalSpending" id="minTotalSpending" />
+                </p>
+                <p>
+                    <label for="minMemberTotalSpending">Min Member Total Spending</label>
+                    <input type="number" name="minMemberTotalSpending" id="minMemberTotalSpending" />
+                </p>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <h1>All Member Orders</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Age Group</th>
+                    <th>Total Spending</th>
+                    <th>No. of Members</th>
+                </tr>
+            </thead>
+            <tbody id="spending-tbody"></tbody>
+        </table>
+    </section>
+    <script src="../../authAdmin.js" type="text/javascript"></script>
+</body>
+
+</html>

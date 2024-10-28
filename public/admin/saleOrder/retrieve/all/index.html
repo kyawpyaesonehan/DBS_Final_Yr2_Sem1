@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <title>Sale Order Management | Retrieve All</title>
+    <link href="/main.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../../../dashboard/">Dashboard</a>
+        <a href="../../">Sale Order</a>
+        <a href="../../../supplier/">Supplier</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </header>
+    <section>
+        <div>
+            <h1>Search Sale Orders</h1>
+            <form class="search">
+                <fieldset class="fieldset-group">
+                    <legend>Order</legend>
+                    <label>Status</label>
+                    <select id="status" name="status" multiple size="3">
+                        <option value="COMPLETED">COMPLETED</option>
+                        <option value="PACKING">PACKING</option>
+                        <option value="CANCELLED">CANCELLED</option>
+                    </select>
+
+                    <p>
+                        <label>Minimum Order Datetime</label>
+                        <input type="date" name="minOrderDatetime" id="minOrderDatetime" />
+                    </p>
+                    <p>
+                        <label>Maximum Order Datetime</label>
+                        <input type="date" name="maxOrderDatetime" id="maxOrderDatetime" />
+                    </p>
+                    <p>
+                        <label>Minimum Item Quantity</label>
+                        <input type="number" name="minQuantity" id="minQuantity" value="0" />
+                    </p>
+                    <p>
+                        <label>Maximum Item Quantity</label>
+                        <input type="number" name="maxQuantity" id="maxQuantity" />
+                    </p>
+                </fieldset>
+                <fieldset class="fieldset-group">
+                    <legend>Product</legend>
+                    <p>
+                        <label>Product Description</label>
+                        <input type="text" name="searchProductDescription" id="searchProductDescription" />
+                    </p>
+                    <p>
+                        <label>Minimum Unit Price</label>
+                        <input type="number" name="minUnitPrice" id="minUnitPrice" value="0" />
+                    </p>
+                    <p>
+                        <label>Maximum Unit Price</label>
+                        <input type="number" name="maxUnitPrice" id="maxUnitPrice" />
+                    </p>
+                </fieldset>
+                <fieldset class="fieldset-group">
+                    <legend>Member</legend>
+                    <p>
+                        <label>Member's Username</label>
+                        <input type="text" name="username" id="username" />
+                    </p>
+                    <p>
+                        <label>Minimum Date of Birth</label>
+                        <input type="date" name="minDob" id="minDob" />
+                    </p>
+                    <p>
+                        <label>Maximum Date of Birth</label>
+                        <input type="date" name="maxDob" id="maxDob" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <label>Sort Order</label>
+                        <select id="sortOrder" name="sortOrder">
+                            <option value="asc">Order Datetime - Earliest First</option>
+                            <option value="desc">Order Datetime - Latest First</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <h1>Sale Orders</h1>
+        <table border="1">
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Unit Price</th>
+                    <th>Item Quantity</th>
+                    <th>Country</th>
+                    <th>Order Id</th>
+                    <th>Order Datetime</th>
+                    <th>Order Status</th>
+                    <th>Product Type</th>
+                    <th>Member Username</th>
+                </tr>
+            </thead>
+            <tbody id="product-tbody"></tbody>
+        </table>
+        </div>
+    </section>
+    <script src="../../../authAdmin.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Shopping Cart Management</title>
+    <link href="/main.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../../../product/">Product</a>
+        <a href="../../../review/">Review</a>
+        <a href="../../../favourite/">Favourite</a>
+        <a href="../../">Cart</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </header>
+    <section>
+        <div>
+            <h1>Shopping Cart</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="selectAll" name="selectAll"> Select All</th>
+                        <th>Product description</th>
+                        <th>Country</th>
+                        <th>Sub-total Price</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
+                        <th>Update Quantity</th>
+                        <th>Delete Item</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-tbody"></tbody>
+                <button id="bulk-update" name="bulk-update">Bulk Update</button>
+                <button id="bulk-delete" name="bulk-delete">Bulk Delete</button>
+            </table>
+    </section>
+    <section>
+        <div class="cart-summary-main">
+            <h1>Cart Summary</h1>
+            <div id="cart-summary">
+            </div>
+        </div>
+        <button id="checkout-button">Checkout</button>
+    </section>
+    <script src="../../../auth.js" type="text/javascript"></script>    
+</body>
+
+</html>

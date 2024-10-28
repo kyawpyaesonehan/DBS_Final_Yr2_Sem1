@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Review Management | Create</title>
+    <link href="/main.css" rel="stylesheet" />
+
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../../product/">Product</a>
+        <a href="../">Review</a>
+        <a href="../../favourite/">Favourite</a>
+        <a href="../../cart/">Cart</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </header>
+    <section>
+        <div id="review-product-main">
+            <h3><i>Select 1 of your past order below to create a review</i></h3>
+            <h1>Create Review for <span id="review-product-id"></span></h1>
+            <form>
+                <fieldset>
+                    <p>
+                        <label for="productId">Product Id</label>
+                        <input type="text" id="productId" name="productId" />
+                    </p>
+                    <p>
+                        <label for="orderId">Order Id</label>
+                        <input type="text" id="orderId" name="orderId" />
+                    </p>
+                    <p>
+                        <label for="rating">Rating</label>
+                        <input type="number" id="rating" name="rating" />
+                    </p>
+                    <p>
+                        <label for="reviewText">Review Text</label>
+                        <textarea type="text" id="reviewText" name="reviewText"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Create</button>
+            </form>
+        </div>
+        <div>
+            <h1>My Previous Order Items</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
+                        <th>Country</th>
+                        <th>Order Id</th>
+                        <th>Order Datetime</th>
+                        <th>Order Status</th>
+                        <th>Create Review</th>                            
+                    </tr>
+                </thead>
+                <tbody id="product-tbody"></tbody>
+            </table>
+        </div>
+    </section>
+    <script src="../../auth.js" type="text/javascript"></script>
+</body>
+
+</html>

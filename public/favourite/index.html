@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Favourite Product Management</title>
+    <link href="/main.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../product/">Product</a>
+        <a href="../review/">Review</a>
+        <a href="./">Favourite</a>
+        <a href="../cart/">Cart</a>
+        <a href="#" onclick="logout()">Logout</a>   
+    </header>
+    <section>
+        <div>
+            <h1>Favourite Product</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
+                        <th>Country</th>
+                        <th>Product Type</th>
+                        <th>Image</th>
+                        <th>Manufactured On</th>
+                        <th>View Product</th>
+                        <th>Remove Favourite</th>
+                        <th>Add to Cart</th>
+                    </tr>
+                </thead>
+                <tbody id="product-tbody"></tbody>
+            </table>
+        </div>
+    </section>
+    <script src="../auth.js" type="text/javascript"></script>
+</body>
+
+</html>
+
+
+
+<html>
